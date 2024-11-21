@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You Christmas Card letter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f8ff;
+      margin: 0;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 800px;
+      padding: 30px;
+      background-color: #ffffff;
+      border: 10px solid #228B22; /* Green border with Christmas vibe */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Add a Christmas border effect with holly leaves on the edges */
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border: 5px solid #228B22; 
+      border-radius: 10px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Holly_leaf.svg');
+      background-repeat: no-repeat;
+      background-position: top left, top right, bottom left, bottom right;
+      background-size: 30px 30px;
+    }
+
+    .card h1 {
+      font-size: 36px;
+      color: #d50000;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      color: #008080;
+      margin-top: 0;
+    }
+
+    .card svg {
+      margin: 20px 0;
+    }
+
+    .message {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: #555;
+      margin-top: 30px;
+    }
+
+    .custom-message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+      min-height: 100px;
+      box-sizing: border-box;
+    }
+
+    
+
+  
+
+
+    .light.red {
+      animation-delay: 0s;
+      fill: red;
+    }
+
+    .light.yellow {
+      animation-delay: 0.2s;
+      fill: yellow;
+    }
+
+    .light.blue {
+      animation-delay: 0.4s;
+      fill: blue;
+    }
+
+    .light.gold {
+      animation-delay: 0.6s;
+      fill: gold;
+    }
+
+    .light.silver {
+      animation-delay: 0.8s;
+      fill: silver;
+    }
+
+    .snowman {
+      position: absolute;
+      left: 60%;
+      top: 25%;
+      width: 100px;
+      height: 180px;
+      z-index: 1;
+    }
+
+    .snowman .body {
+      fill: white;
+      stroke: #dcdcdc;
+      stroke-width: 2;
+    }
+
+    .snowman .hat {
+      fill: #000000;
+    }
+
+    .snowman .buttons {
+      fill: black;
+    }
+
+    .snowman .scarf {
+      fill: red;
+    }
+
+    /* Snowman Stick Arms */
+    .snowman .left-arm,
+    .snowman .right-arm {
+      stroke: #8B4513; /* Brown color for the sticks */
+      stroke-width: 4;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- To and From Section -->
+    <div style="width: 100%; text-align: left; margin-bottom: 20px;">
+      <p><strong>To:</strong> [My Mom]</p>
+      <p><strong>From:</strong> [Bismark]</p>
+    </div>
+
+    <h1>Dear [Mama],</h1>
+
+    <div style="position: relative; width: 100%; height: 350px;">
+      <!-- Christmas Tree -->
+      <svg width="200" height="300" style="position: absolute; left: 5%;">
+        <polygon points="100,20 40,150 160,150" style="fill:green;stroke:black;stroke-width:2" />
+        <polygon points="100,60 30,190 170,190" style="fill:green;stroke:black;stroke-width:2" />
+        <polygon points="100,100 20,230 180,230" style="fill:green;stroke:black;stroke-width:2" />
+        <rect x="85" y="230" width="30" height="50" style="fill:brown;" />
+        <circle cx="100" cy="50" r="5" class="light red" />
+        <circle cx="60" cy="120" r="5" class="light yellow" />
+        <circle cx="140" cy="120" r="5" class="light blue" />
+        <circle cx="80" cy="170" r="5" class="light gold" />
+        <circle cx="120" cy="170" r="5" class="light silver" />
+        <polygon points="100,20 105,40 95,40" style="fill:yellow;stroke:black;stroke-width:1" />
+        <polygon points="100,20 90,30 110,30" style="fill:yellow;stroke:black;stroke-width:1" />
+      </svg>
+
+      <!-- Cute Snowman -->
+      <svg class="snowman" width="100" height="180">
+        <!-- Body -->
+        <circle cx="50" cy="130" r="30" class="body" />
+        <circle cx="50" cy="80" r="25" class="body" />
+        <circle cx="50" cy="40" r="20" class="body" />
+        <!-- Hat -->
+        <g class="hat">
+          <rect x="35" y="15" width="30" height="10" class="hat-top" />
+          <rect x="30" y="25" width="35" height="5" class="hat-brim" />
+        </g>
+        <!-- Eyes -->
+        <circle cx="45" cy="35" r="2" class="eyes" />
+        <circle cx="55" cy="35" r="2" class="eyes" />
+        <!-- Buttons -->
+        <circle cx="50" cy="90" r="2" class="buttons" />
+        <circle cx="50" cy="105" r="2" class="buttons" />
+        <circle cx="50" cy="120" r="2" class="buttons" />
+        <!-- Scarf -->
+        <rect x="37" y="60" width="25" height="6" class="scarf" />
+        <rect x="42" y="66" width="16" height="5" class="scarf" />
+        <!-- Stick Arms -->
+        <line x1="30" y1="100" x2="0" y2="90" class="left-arm" />
+        <line x1="70" y1="100" x2="100" y2="90" class="right-arm" />
+      </svg>
+    </div>
+
+    <div class="message">
+      <p>Thank you for being there for me.<br>
+      I appreciate your hard work and I did my best in school to achieve that I want for my life for a better future
+      .<br>
+      Thankyou for everything, mom!</p>
+    </div>
+
+    <div class="custom-message">
+      <p><strong>Your Message:</strong></p>
+      <textarea rows="5" placeholder="Merry Christmas, Mom!"></textarea>
+    </div>
+
+    <div class="footer">
+      <p>Designed with love by [Bismark L. De Asis]</p>
+    </div>
+  </div>
+
+</body>
+</html>
